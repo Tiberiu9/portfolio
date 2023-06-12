@@ -39,12 +39,12 @@
 
 .logo {
   transition: width 8s, height 7s, margin-left 5s, background 5s, box-shadow 6s,
-    transform 20s linear;
+    transform 3s linear;
   transition-delay: 0s;
 }
 
 .logo:hover {
-  transform: rotate(3600deg);
+  transform: rotate(360deg);
 }
 
 .custom-toggler.navbar-toggler {
