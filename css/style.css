@@ -7,8 +7,8 @@
   text-decoration: underline;
 } */
 
-.asdf {
-  color: aqua;
+.nav-link {
+  text-shadow: 3px 3px 3px #050505;
 }
 
 .nav-link {
@@ -86,7 +86,7 @@
   top: 30%;
   font-size: 4vw;
   color: rgb(255, 255, 255);
-  text-shadow: 3px 3px 8px #050505;
+  text-shadow: 3px 3px 5px #050505;
 }
 
 .my-job {
@@ -96,7 +96,7 @@
   font-size: 2vw;
   color: rgb(255, 255, 255);
 
-  text-shadow: 3px 3px 8px #050505;
+  text-shadow: 3px 3px 5px #050505;
 }
 
 @media screen and (max-width: 992px) {
@@ -114,7 +114,7 @@
 /* ---------------------- Projects ---------------------- */
 
 .projects {
-  text-shadow: 2px 2px 5px gray;
+  text-shadow: 3px 3px 5px gray;
 }
 
 .eye-font {
