@@ -43,7 +43,7 @@
 
 .logo {
   transition: width 8s, height 7s, margin-left 5s, background 5s, box-shadow 6s,
-    transform 3s linear;
+    transform 2.5s linear;
   transition-delay: 0s;
 }
 
@@ -101,12 +101,12 @@
 
 @media screen and (max-width: 992px) {
   .my-name {
-    font-size: 8vw;
+    font-size: 6vw;
     top: 40%;
   }
   .my-job {
-    font-size: 4vw;
-    top: 55%;
+    font-size: 3vw;
+    top: 52%;
   }
 }
 /* -----------------Main image and text END----------------- */
