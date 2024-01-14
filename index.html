@@ -326,21 +326,52 @@
                   API with bearer token authentication, versioning(namespaces),
                   scopes - users can query only the data associated with their
                   id, CORS, etc, deployed on Fly.io. More features and
-                  documentation are in development stage. Created with Ruby on
+                  documentation are in development stage. Developed with Ruby on
                   Rails, Postgresql DB and tested with Postman. For easy testing
                   with Postman the DB has been seeded with 2 users and 100
-                  organizations for each. You can import the collection on
-                  postman with Ctrl+O, paste the link below, and then run CRUD
-                  requests.
-                  https://www.postman.com/tiberiu9/workspace/public-workspace/collection/22458963-9797f6a8-0df3-41eb-87b7-0cf8528477cc?action=share&creator=22458963
+                  organizations for each. Click "Run in Postman" Button to fork
+                  the collection, send the POST request Sign in Auth, copy the
+                  Bearer Token from the response headers of the Sign In request
+                  to the rest of the CRUD requests in Authorization tab and save
+                  it, run CRUD requests.
                 </p>
                 <div class="text-center">
                   <a
-                    href="https://organizations.fly.dev/api/v1/organizations"
-                    target="_blank"
-                    class="btn btn-success"
-                    ><i class="fa-regular fa-eye eye-font"></i>
-                    View Live
+                    class="btn postman-run-button"
+                    style="
+                      height: 38px;
+                      background-repeat: no-repeat;
+                      background-size: 100% 100%;
+                    "
+                    data-postman-action="collection/fork"
+                    data-postman-visibility="public"
+                    data-postman-var-1="22458963-9797f6a8-0df3-41eb-87b7-0cf8528477cc"
+                    data-postman-collection-url="entityId=22458963-9797f6a8-0df3-41eb-87b7-0cf8528477cc&entityType=collection&workspaceId=0c7e858c-3fdb-4c8a-a98d-ccbcc30911b6"
+                  >
+                    <script type="text/javascript">
+                      (function (p, o, s, t, m, a, n) {
+                        !p[s] &&
+                          (p[s] = function () {
+                            (p[t] || (p[t] = [])).push(arguments);
+                          });
+                        !o.getElementById(s + t) &&
+                          o
+                            .getElementsByTagName("head")[0]
+                            .appendChild(
+                              ((n = o.createElement("script")),
+                              (n.id = s + t),
+                              (n.async = 1),
+                              (n.src = m),
+                              n)
+                            );
+                      })(
+                        window,
+                        document,
+                        "_pm",
+                        "PostmanRunObject",
+                        "https://run.pstmn.io/button.js"
+                      );
+                    </script>
                   </a>
                   <a
                     href="https://github.com/Tiberiu9/Organizations-API"
@@ -368,13 +399,11 @@
         <div class="copy d-flex justify-content-around align-items-center pt-3">
           <p>&copy;2023, Tiberiu Iftimie</p>
         </div>
-
         <div class="email d-flex justify-content-around align-items-center">
           <a href="mailto:TiberiuIftimie@yahoo.com" class="email-to"
             >TiberiuIftimie@yahoo.com</a
           >
         </div>
-
         <div
           class="socials d-flex justify-content-around align-items-center pb-3"
         >
