@@ -47,7 +47,7 @@
 }
 
 .logo:hover {
-  transform: rotate(360deg);
+  transform: rotate(-360deg);
 }
 
 .custom-toggler.navbar-toggler {
@@ -75,7 +75,7 @@
   filter: brightness(0.5); */
 }
 
-.parent {
+.background-image {
   position: relative;
 }
 
