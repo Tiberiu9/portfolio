@@ -67,6 +67,7 @@
 .img-fluid {
   width: 100vw;
   height: auto;
+  /* aspect-ratio: 16 / 10; */
   /* object-fit: cover;
   position: absolute;
   top: 0;
@@ -77,6 +78,9 @@
 
 .background-image {
   position: relative;
+  /* width: 100vw;
+  height: auto; */
+  /* aspect-ratio: 16 / 10; */
 }
 
 .my-name {
@@ -115,6 +119,15 @@
   text-shadow: 3px 3px 5px gray;
 }
 
+.card-title {
+  /* text-shadow: 1px 3px 5px gray; */
+  font-size: 1.5em;
+}
+
+/* .card-text {
+  font-size: 1em;
+} */
+
 .eye-font {
   font-size: 17px;
 }
@@ -127,6 +140,7 @@
   margin: auto;
   width: 96%;
   box-shadow: rgba(74, 87, 75, 0.445) 0px 0px 10px 5px;
+  font-size: 0.96em;
 
   transition: width 0.3s, height 0.3s, margin-left 0.3s, background 5s,
     box-shadow 0.3s, transform 0.3s linear;
@@ -136,6 +150,7 @@
   width: 100%;
   z-index: 2;
   box-shadow: rgba(74, 87, 75, 0.445) 0px 10px 25px 30px;
+  font-size: 1em;
 }
 
 /* ========================= Projects END ======================= */

@@ -9,22 +9,34 @@
       name="description"
       content="Portfolio website created to present my web applications to the World Wide Web "
     />
+    <!-- images -->
     <link rel="icon" type="image/x-icon" href="images/favicon.svg" />
+    <link rel="preload" as="image" href="images/laptop_compressed.jpg">
+    <!-- styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
+      fetchpriority="high"
     />
+    <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/bootstrapsocial/bootstrap-social.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrapsocial/bootstrap-social.css"
+    media="print"
+    onload="this.onload=null;this.removeAttribute('media');"
+    fetchpriority="high" 
+    />
   </head>
   <body>
     <header>
@@ -102,12 +114,13 @@
                   src="images/projects/instagram.png"
                   class="card-img-top"
                   alt="i1"
+                  loading="lazy"
                 />
               </a>
               <div class="card-body text-center">
-                <h5 class="card-title">Instagram Clone</h5>
+                <h2 class="card-title">Instagram Clone</h2>
                 <p class="card-text">
-                  MVP Instagram Clone created with CSS, Bootstrap, JavaScript, Hotwired - Turbo, Ruby
+                  Fully Responsive MVP Instagram Clone created with CSS, Bootstrap, JavaScript, Hotwired - Turbo, Ruby
                   on Rails, Postgresql DB.
                 </p>
                 <div class="text-center">
@@ -136,10 +149,11 @@
                   src="images/projects/calendly.jpg"
                   class="card-img-top"
                   alt="i1"
+                  loading="lazy"
                 />
               </a>
               <div class="card-body text-center">
-                <h5 class="card-title">Calendly Clone</h5>
+                <h2 class="card-title">Calendly Clone</h2>
                 <p class="card-text">
                   Basic Calendly Clone. An appointment scheduling app with embedded Stripe payment system. Created
                   with HTML, Tailwind CSS template, JavaScript, Ruby
@@ -171,10 +185,11 @@
                   src="images/projects/friends.jpg"
                   class="card-img-top"
                   alt="i1"
+                  loading="lazy"
                 />
               </a>
               <div class="card-body text-center">
-                <h5 class="card-title">Friends List</h5>
+                <h2 class="card-title">Friends List</h2>
                 <p class="card-text">
                   Simple CRUD backend project built with Ruby on Rails and styled with
                   Bootstrap. Users can sign in and create their own list of
@@ -206,10 +221,11 @@
                   src="images/projects/ecocomplysolutions.png"
                   class="card-img-top"
                   alt="i1"
+                  loading="lazy"
                 />
               </a>
               <div class="card-body text-center">
-                <h5 class="card-title">EcoComply Solutions</h5>
+                <h2 class="card-title">EcoComply Solutions</h2>
                 <p class="card-text">
                   Python backend as Firebase cloud functions with triggers for a RAG - LLM
                   project designed for Environmental compliance niche. <b>Technologies used:</b> Firebase, Python, OpenAI API,
@@ -248,10 +264,11 @@
                   src="images/projects/organizations-api.png"
                   class="card-img-top"
                   alt="i1"
+                  loading="lazy"
                 />
               </a>
               <div class="card-body text-center">
-                <h5 class="card-title">Organizations API</h5>
+                <h2 class="card-title">Organizations API</h2>
                 <p class="card-text" style="font-size: 16px; line-height: 18px">
                   API with bearer token authentication, versioning(namespaces),
                   scopes - users can query only the data associated with their
@@ -321,10 +338,11 @@
                   src="images/projects/portfolio2.jpg"
                   class="card-img-top"
                   alt="i1"
+                  loading="lazy"
                 />
               </a>
               <div class="card-body text-center">
-                <h5 class="card-title">Portfolio Website</h5>
+                <h2 class="card-title">Portfolio Website</h2>
                 <p class="card-text">
                   Personal Portfolio created with HTML, CSS, Bootstrap.
                 </p>
@@ -374,18 +392,21 @@
             href="https://github.com/Tiberiu9"
             target="_blank"
             class="btn btn-dark"
+            alt="github"
             ><i class="fab fa-github"></i>
           </a>
           <a
             href="https://www.facebook.com/tiby.tiberiu.501"
             target="_blank"
             class="btn btn-dark"
+            alt="facebook"
             ><i class="fa-brands fa-facebook"></i>
           </a>
           <a
             href="https://ro.linkedin.com/in/tiberiu-iftimie-b50a7771"
             target="_blank"
             class="btn btn-dark"
+            alt="linkedin"
             ><i class="fa-brands fa-linkedin-in"></i>
           </a>
         </div>
@@ -398,6 +419,9 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
-    ></script>
+      defer></script>
+      <!-- <script src="/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" defer></script> -->
+      <!-- <script src="/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" async></script> -->
+
   </body>
 </html>
