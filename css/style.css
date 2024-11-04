@@ -68,8 +68,8 @@
   width: 100vw;
   height: auto;
   /* aspect-ratio: 16 / 10; */
-  /* object-fit: cover;
-  position: absolute;
+  object-fit: cover;
+  /* position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
@@ -85,8 +85,8 @@
 
 .my-name {
   position: absolute;
-  left: 5%;
-  top: 30%;
+  left: 10.5%;
+  top: 32%;
   font-size: 4vw;
   color: rgb(255, 255, 255);
   text-shadow: 3px 3px 5px #050505;
@@ -94,8 +94,8 @@
 
 .my-job {
   position: absolute;
-  left: 9%;
-  top: 38%;
+  left: 14%;
+  top: 40%;
   font-size: 2vw;
   color: rgb(255, 255, 255);
   text-shadow: 3px 3px 5px #050505;
@@ -104,11 +104,14 @@
 @media screen and (max-width: 992px) {
   .my-name {
     font-size: 6vw;
+    left: 5%;
     top: 40%;
   }
   .my-job {
-    font-size: 3vw;
+    left: 8.8%;
     top: 52%;
+    margin-left: 1.75%;
+    font-size: 3vw;
   }
 }
 /* ================== Main image and text END ===================== */
@@ -124,7 +127,7 @@
   font-size: 1.5em;
 }
 
-.card-img-top{
+.card-img-top {
   width: 100%;
   height: auto;
 }
@@ -156,19 +159,39 @@
 
 /* ========================= Projects END ======================= */
 
+/* =========================== Modal with Carousel =========================  */
+
+/* body .modal-ku {
+  width: 1500px;
+  } */
+
+.carousel .carousel-indicators button {
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+}
+
 /* =========================== Footer =========================  */
 .footer-container {
   height: 300px;
   color: rgb(255, 255, 255);
 }
 
-.socials i {
-  font-size: 50px;
+/* .socials i {
+  font-size: 80px;
   color: rgb(255, 255, 255);
-}
+  width: ;
+} */
 
 .socials a {
   border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgb(206, 16, 16); */
+  font-size: 50px;
 }
 
 .email-to {
